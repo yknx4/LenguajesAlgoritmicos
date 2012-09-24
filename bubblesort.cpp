@@ -20,10 +20,14 @@ int main(){
 	tmp_cnt = 0;
 	bool sw;
 	for (j=0;j<ARRAY_SIZE;j++){
-		tmp_cnt = 0;
 		sw=0;
-		do{
+		cout<<"\n";
+		for(p=0;p<ARRAY_SIZE;p++){
+			cout << number[p] << " ";
+		}
+		for(tmp_cnt=0;tmp_cnt<ARRAY_SIZE-1;tmp_cnt++){
 			if (number[tmp_cnt]>number[tmp_cnt+1]){
+
 				tmp1=number[tmp_cnt];
 				number[tmp_cnt]=number[tmp_cnt+1];
 				number[tmp_cnt+1]=tmp1;
@@ -36,8 +40,7 @@ int main(){
 				cout << number[tmp_cnt] << " es n\n";
 				cout << number[tmp_cnt+1] << " es n+1\n";*/
 			}
-			tmp_cnt++;
-	}while (tmp_cnt<ARRAY_SIZE-1);
+	};
 	cout<<"\n-----------------------------------------------------\n";
 	if (sw==false){
 		break;
