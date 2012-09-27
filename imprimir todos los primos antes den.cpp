@@ -19,7 +19,7 @@ int main()
 	for (x=1;x<=n;x++) {
 		if (prime(x)==1){
 			cout<<x;
-			cout<<"\n";
+			cout<<"\n";	
 		}
-		}
+	}
 	}
