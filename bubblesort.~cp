@@ -23,7 +23,7 @@ int main(){
 				}
 			}
 			tmp_cnt++;
-	}while (tmp_cnt<ARRAY_SIZE-1);
+		}while (tmp_cnt<ARRAY_SIZE-1);
 	cout<<"\n-------------------------------------------------------\n";
 	if (sw==false){
 		break;
