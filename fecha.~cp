@@ -1,0 +1,23 @@
+#include <windows.h>
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+#include <string>
+
+using namespace std;
+main(){
+string dia[7]={"Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"};
+string mes[12]={"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+int dia_a,dia_s,mth,year;
+/*dia_a=8;
+dia_s=0;
+mth=9;
+year=2012;*/
+
+cout<< "Inserte dia, mes y anio (separados por un espacio)";
+cin>>dia_a>>mth>>year;
+dia_s=(dia_a+mth)%7;
+
+
+cout <<"Hoy es "<<dia[dia_s]<<" "<<dia_a<<" de "<<mes[mth-1]<<" de "<<year<<"\n";
+}
