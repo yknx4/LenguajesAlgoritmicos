@@ -16,7 +16,7 @@ void centena(int a=0,int b=0,int c=0){
 			cout<<centena[a];
 		}
 		if((c==0)&&(b==1)){
-			cout<<especiales[6];
+			cout<<especiales[6];d
 		}else if((b!=1)||(c>5)){
 			cout<<decena[b];
 		}
