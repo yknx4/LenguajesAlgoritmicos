@@ -5,7 +5,7 @@
 #include <string>
 #define PI 3.14159265359	
 #define GR 9.81
-#define CX 76
+#define CX 74
 #define CY 20
 using namespace std;
 
@@ -54,6 +54,8 @@ void yline(int size,int x0=0,int y0=0){
 }
 int main(){
 	system("cls");
+	int x_t,cx;
+	float inc_i;
 	float cnt,cn_y;
 	float v=40;//m/s
 	float ang = 25;//grados
@@ -67,6 +69,18 @@ int main(){
 	cout<<"Distancia = "<<x<<"m\t";
 	cout<<"Altura = "<<y<<"m\t";
 	cout<<"Tiempo = "<<s<<"s\t";
+	/*if (x>74)
+	{
+		x_t=CX;
+		cx=1;
+		inc_i=1;
+	} 
+	else
+	{
+		x_t=x;
+		cx=CX;
+		inc_i=0.01;
+	}*/
 	if (y>20)
 	{
 		cn_y = CY/y;
@@ -80,10 +94,12 @@ int main(){
 	xline(80,0,21);//Dibuja el eje x
 	yline(24,3,0);//Dibuja el eje y
 	cnt=0;
-	for(int i=4;i<80;i++){
+	//for(int i=0;i<x_t;i+=inc_i){
+	for(int i=0;i<75;i++){
 		y=((v*seno(ang)*cnt)-((GR*cnt*cnt)/2))*cn_y;
-		gotoxy(i,20-y);
-		cnt+=(float)s/CX;
+		gotoxy(i+4,20-y);
+		//cnt+=(float)(s*cx)/CX;
+		cnt+=(float)(s)/CX;
 		cout <<'*';
 	}
 	pause();
