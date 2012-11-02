@@ -2,10 +2,17 @@
 #include <windows.h>
 #include <math.h>
 #include <conio.h>
+#include <string>
 #define PI 3.14159265359	
 //#define PI 3.1416
 using namespace std;
-
+void pause(string msg=""){
+	short int a;
+	cout<<msg;
+	do{
+		a=getch();
+	}while (a!='\r');
+}
 void gotoxy(short int column,short int line )
 {
 	COORD coord;
@@ -59,9 +66,12 @@ int main(){
 		circle(r);
 		circle(r-2);
 		Sleep(100);
-		circle(r-3,40,12,' ');
+		//circle(r-3,40,12,' ');
+		circle(r-3,,,' ');
 		circle(r,40,12,' ');
 		}
 	circle(r,40,12,' ');
 	gotoxy(0,0);
+	pause();
+	system("cls");
 }
