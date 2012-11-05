@@ -151,7 +151,7 @@ void menu6(){
 	char a;
 	system("cls");
 	cout<<endl<<"Ingrese 1 caracter "<<endl;
-	a=getch();
+	a=getche();
 	if (car19(a))
 	{
 		cout<<endl<<"El caracter esta entre 0 y 9"<<endl;
