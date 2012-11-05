@@ -51,7 +51,6 @@ int media3num(int a, int b, int c){
 long double fact1001kk(int a){
 	if (a>=100 && a<=1000000)
 	{
-		//Esta es la aproximación por el metodo de stirling el cual es un método para calcular el factorial de números muy grandes....
 		return sqrt(2*PI*a)*pow((a/e),a);
 	} 
 	else
@@ -80,21 +79,12 @@ int potencia(int a, int n){
 	}
 	return res;
 }
-void cpoltoccar(float a, float b){
+void cpoltoccar(float a, int b){
 	int x,y;
 	x=floor(a*cosn(b)+0.5);
 	y=floor(a*seno(b)+0.5);
 	cout << "("<<x<<","<<y<<")";
 }
-/*
-Point cpoltoccar(float a, float b){
-	float x,y;
-	x=a*cosn(b);
-	y=a*seno(b);
-	return Point(x,y);
-	//cout << "("<<x<<","<<y<<")";
-	//cout<<carte;
-}*/
 
 bool car19(char a){
 	if (a>47 && a<58)
